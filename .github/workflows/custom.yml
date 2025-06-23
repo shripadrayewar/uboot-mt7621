@@ -77,6 +77,8 @@ jobs:
   build:
     name: Build MT7621 u-boot
     runs-on: ubuntu-20.04
+    container:
+       image: python:2.7-buster
     strategy:
        fail-fast: False
 
