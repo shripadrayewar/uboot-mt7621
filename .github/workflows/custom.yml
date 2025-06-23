@@ -91,7 +91,7 @@ jobs:
       - name: Install essential packages
         run: |
           apt-get update
-          apt-get install -y swig
+          apt-get install -y swig bison flex
       - name: Download OpenWrt toolchain
         run: |
           wget -O - https://github.com/DragonBluep/uboot-mt7621/releases/download/20230517/openwrt-toolchain-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64.tar.xz \
